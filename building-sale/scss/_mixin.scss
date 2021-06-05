@@ -1,0 +1,50 @@
+@mixin h-font {
+  font: {
+      family: $font-title;
+  }   
+  line-height: 1.2;
+  //letter-spacing: 10px;
+}
+
+@mixin h1 {
+  font: {
+      weight: 700;
+      size: 50px;
+  }   
+  color: #000;
+  text-transform: uppercase;
+}
+
+@mixin h2 {
+  font: {
+      weight: 400;
+      size: 36px;
+  }
+  color: white;  
+  text-transform: uppercase; 
+}
+
+@mixin h3 {
+  font: {
+      weight: 700;
+      size: 36px;
+  }  
+  color: #000; 
+  text-transform: uppercase;
+}
+
+
+@mixin basic-font {
+  font: {
+      family: $font-basic;
+      weight: 400;
+      //size: 18px;
+  }   
+  line-height: 1.667;
+  //letter-spacing: 10px;
+  color: #000;
+}
+
+
+
+
