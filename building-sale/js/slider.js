@@ -43,13 +43,3 @@ document
 document
   .querySelectorAll(".gallery__button--right")
   .forEach((element) => element.addEventListener("click", pressRightSlider));
-
-document.querySelector(".plan__img--2").addEventListener("click", (el) => {
-  /*if (document.documentElement.webkitRequestFullscreen) {
-    document.documentElement.webkitRequestFullscreen();
-  } else {
-    document.documentElement.mozRequestFullScreen();
-  }*/
-  console.log(el.path[0]);
-  document.documentElement.webkitFullscreenElement();
-});

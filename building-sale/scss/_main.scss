@@ -27,6 +27,10 @@ body {
   font-size: 18px;
 }
 
+.body--lock {
+  overflow: hidden;
+}
+
 h3 {
   @include h-font; 
   @include h3; 
@@ -193,7 +197,7 @@ h3 {
 
   &__img {
     margin: 0 10px;
-    cursor: pointer;
+    //cursor: pointer;
   }
 
   &__button {
@@ -329,7 +333,7 @@ h3 {
     margin-bottom: 70px;
   }
   &__img {
-    cursor: pointer;
+    cursor: zoom-in;
     &--1 {
       margin-left: -80px;
       margin-bottom: 30px;
