@@ -1,0 +1,141 @@
+@media all and (max-width: 1279px) {
+  body {
+    font-size: 14px;
+  }
+
+  h3 {
+    font-size: 28px;
+}
+
+  .header {
+    font-size: 10px;
+
+  }
+
+  .button {
+    width: 175px;
+    height: 50px;
+    font-size: 14px;
+  }
+
+  .home {
+    &__title {
+      font-size: 32px;
+    }
+    &__subtitle {
+      font-size: 24px;
+      margin: 150px 0 5px;
+    }
+    &__description {
+      font-size: 18px;
+    }
+  }
+
+  .about {
+    padding-bottom: 80px;
+    &__title {
+      margin: 10px 0 10px;
+    }
+    &__subtitle {
+      font-size: 24px;
+    }
+    &__description {
+      font-size: 16px;
+      margin-top: 8px;
+      margin-bottom: 15px;
+    }
+    &__item {
+      padding: 2px 0;
+    }
+    &__button {
+      margin: 20px 0;
+    }
+    &__img {
+      height: 400px;
+      top: 70px;
+    }
+  }
+
+  .advantages {
+    padding-bottom: 85px;
+    &__icon {
+      width: 45px;
+    }
+  }
+
+  .safety {
+
+    padding-bottom: 100px;
+    //padding-top: 100px;
+
+    &__title {
+      margin-bottom: 25px;
+    }
+    &__description {
+      margin-bottom: 30px;
+    }
+    &__img {
+      &--top {
+        //left: 250px;
+        right: 120px;
+        height: 350px;
+      }
+      &--back {
+        height: 300px;
+      }
+    }
+}
+
+
+  .comfort {
+
+    padding-bottom: 100px;
+    padding-top: 100px;
+
+    &__title {
+      margin-bottom: 25px;
+    }
+    &__description {
+      margin-bottom: 30px;
+    }
+    &__img {
+      &--top {
+        left: 250px;
+        height: 300px;
+      }
+      &--back {
+        height: 350px;
+      }
+    }
+  }
+
+  .plan {
+    padding-top: 70px;
+    &__img {
+      width: 750px;
+      &--2 {
+        margin-left: 50px;
+        margin-bottom: 70px;
+      }
+    }
+  }
+
+
+  .contacts {
+    &__title {
+      margin: 150px 0 15px 25px;
+    }
+    &__item {
+      margin: 15px 0 15px 25px;
+    }
+  }
+}
+
+@media all and (max-width: 795px) { 
+  .gallery__button-wrapper {
+   width: 760px;
+  }
+}
+
+
+@media all and (max-width: 767px) { }

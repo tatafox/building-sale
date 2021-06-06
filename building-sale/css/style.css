@@ -172,14 +172,13 @@ h3 {
 /* ---button---*/
 /* ---home---*/
 .home {
-  height: calc(100vh - 122px);
   background-image: url(../img/background.jpg);
   background-size: cover;
 }
 
 .home__wrapper {
   background-color: rgba(255, 255, 255, 0.3);
-  height: calc(100vh - 122px);
+  min-height: calc(100vh - 122px);
 }
 
 .home__title {
@@ -204,12 +203,16 @@ h3 {
   padding: 10px 0;
   -webkit-transform: rotate(6deg);
           transform: rotate(6deg);
-  margin: 150px 0 20px;
+  margin: 200px 0 5px;
 }
 
 .home__description {
   font-size: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
+}
+
+.home__button {
+  margin-bottom: 70px;
 }
 
 /* ---home---*/
@@ -246,7 +249,7 @@ h3 {
 .about__img {
   position: absolute;
   z-index: -1;
-  left: -305px;
+  right: 108%;
 }
 
 .about__title {
@@ -282,7 +285,7 @@ h3 {
 }
 
 .gallery__wrapper {
-  left: -170px;
+  left: calc((100vw - 1280px) / 2 - 515px);
   position: relative;
 }
 
@@ -291,14 +294,17 @@ h3 {
   cursor: pointer;
 }
 
-.gallery__button {
+.gallery__button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 800px;
   position: relative;
-  top: -275px;
-}
-
-.gallery__button--left {
-  padding-right: 700px;
-  padding-left: 580px;
+  top: -260px;
+  margin: 0 auto;
 }
 
 .gallery__button--left img {
@@ -311,6 +317,11 @@ h3 {
 .safety {
   position: relative;
   padding-bottom: 300px;
+}
+
+.safety__wrapper {
+  background: white;
+  padding: 35px 15px;
 }
 
 .safety__title {
@@ -337,6 +348,12 @@ h3 {
   position: relative;
   padding-bottom: 300px;
   padding-top: 130px;
+  overflow: hidden;
+}
+
+.comfort__wrapper {
+  background: white;
+  padding: 35px 15px;
 }
 
 .comfort__title {
@@ -389,7 +406,6 @@ h3 {
 }
 
 .feedback__title {
-  font-size: 32px;
   color: white;
   text-align: center;
   margin-bottom: 40px;
@@ -399,7 +415,8 @@ h3 {
 /* ---plan---*/
 .plan {
   text-align: center;
-  padding-top: 170px;
+  padding-top: 100px;
+  overflow: hidden;
 }
 
 .plan__title {
@@ -411,12 +428,12 @@ h3 {
 }
 
 .plan__img--1 {
-  margin-left: -350px;
+  margin-left: -80px;
   margin-bottom: 30px;
 }
 
 .plan__img--2 {
-  margin-left: 350px;
+  margin-left: 100px;
   margin-bottom: 150px;
 }
 
@@ -429,7 +446,6 @@ h3 {
 .contacts__map {
   position: absolute;
   width: 100%;
-  z-index: -1;
 }
 
 .contacts__wrapper {
@@ -460,4 +476,115 @@ h3 {
 }
 
 /* ---footer---*/
+@media all and (max-width: 1279px) {
+  body {
+    font-size: 14px;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  .header {
+    font-size: 10px;
+  }
+  .button {
+    width: 175px;
+    height: 50px;
+    font-size: 14px;
+  }
+  .home__title {
+    font-size: 32px;
+  }
+  .home__subtitle {
+    font-size: 24px;
+    margin: 150px 0 5px;
+  }
+  .home__description {
+    font-size: 18px;
+  }
+  .about {
+    padding-bottom: 80px;
+  }
+  .about__title {
+    margin: 10px 0 10px;
+  }
+  .about__subtitle {
+    font-size: 24px;
+  }
+  .about__description {
+    font-size: 16px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+  }
+  .about__item {
+    padding: 2px 0;
+  }
+  .about__button {
+    margin: 20px 0;
+  }
+  .about__img {
+    height: 400px;
+    top: 70px;
+  }
+  .advantages {
+    padding-bottom: 85px;
+  }
+  .advantages__icon {
+    width: 45px;
+  }
+  .safety {
+    padding-bottom: 100px;
+  }
+  .safety__title {
+    margin-bottom: 25px;
+  }
+  .safety__description {
+    margin-bottom: 30px;
+  }
+  .safety__img--top {
+    right: 120px;
+    height: 350px;
+  }
+  .safety__img--back {
+    height: 300px;
+  }
+  .comfort {
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
+  .comfort__title {
+    margin-bottom: 25px;
+  }
+  .comfort__description {
+    margin-bottom: 30px;
+  }
+  .comfort__img--top {
+    left: 250px;
+    height: 300px;
+  }
+  .comfort__img--back {
+    height: 350px;
+  }
+  .plan {
+    padding-top: 70px;
+  }
+  .plan__img {
+    width: 750px;
+  }
+  .plan__img--2 {
+    margin-left: 50px;
+    margin-bottom: 70px;
+  }
+  .contacts__title {
+    margin: 150px 0 15px 25px;
+  }
+  .contacts__item {
+    margin: 15px 0 15px 25px;
+  }
+}
+
+@media all and (max-width: 795px) {
+  .gallery__button-wrapper {
+    width: 760px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

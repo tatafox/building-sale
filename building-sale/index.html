@@ -212,15 +212,15 @@
 
       <!-- about -->
       <div class="about" id="about">
-        <img
-          src="./img/0098.jpg"
-          alt="здание фотография"
-          height="810px"
-          class="about__img"
-        />
         <div class="container">
           <div class="row justify-content-end">
             <div class="about__wrapper col-6">
+              <img
+                src="./img/0098.jpg"
+                alt="здание фотография"
+                height="810px"
+                class="about__img"
+              />
               <h3 class="about__title">КУПИТЬ</h3>
               <h4 class="about__subtitle">
                 Производственное помещение в Томске
@@ -339,22 +339,24 @@
             height="500px"
           />
         </div>
-        <button class="gallery__button gallery__button--left">
-          <img
-            src="./img/button.svg"
-            alt=""
-            class="gallery__button-img"
-            height="50px"
-          />
-        </button>
-        <button class="gallery__button gallery__button--right">
-          <img
-            src="./img/button.svg"
-            alt=""
-            class="gallery__button-img"
-            height="50px"
-          />
-        </button>
+        <div class="gallery__button-wrapper">
+          <button class="gallery__button gallery__button--left">
+            <img
+              src="./img/button.svg"
+              alt=""
+              class="gallery__button-img"
+              height="50px"
+            />
+          </button>
+          <button class="gallery__button gallery__button--right">
+            <img
+              src="./img/button.svg"
+              alt=""
+              class="gallery__button-img"
+              height="50px"
+            />
+          </button>
+        </div>
       </div>
       <!-- /gallery -->
 
@@ -425,7 +427,7 @@
       <div class="feedback" id="feedback">
         <div class="container">
           <div class="row justify-content-center">
-            <div class="feedback__wrapper col-4">
+            <div class="feedback__wrapper col-sm-6 col-4">
               <form
                 name="feedback__form"
                 action="mail.php"
