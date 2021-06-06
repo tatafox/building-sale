@@ -81,6 +81,37 @@
   transition: all .3s ease-out;
 }
 
+.zoom {
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
+.zoom--active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.zoom--height {
+  height: 90vh;
+}
+
+.zoom--width {
+  width: 90vw;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -107,6 +138,10 @@ button {
 body {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
+}
+
+.body--lock {
+  overflow: hidden;
 }
 
 h3 {
@@ -295,7 +330,6 @@ h3 {
 
 .gallery__img {
   margin: 0 10px;
-  cursor: pointer;
 }
 
 .gallery__button-wrapper {
