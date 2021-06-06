@@ -76,6 +76,11 @@
 }
 
 /* ---contacts---*/
+.slider-animation {
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -285,7 +290,6 @@ h3 {
 }
 
 .gallery__wrapper {
-  left: calc((100vw - 1280px) / 2 - 515px);
   position: relative;
 }
 
