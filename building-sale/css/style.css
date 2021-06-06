@@ -478,7 +478,7 @@ h3 {
 /* ---footer---*/
 @media all and (max-width: 1279px) {
   body {
-    font-size: 14px;
+    font-size: 16px;
   }
   h3 {
     font-size: 28px;
@@ -585,6 +585,115 @@ h3 {
 @media all and (max-width: 795px) {
   .gallery__button-wrapper {
     width: 760px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .header {
+    font-size: 12px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .header__contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .menu {
+    display: none;
+  }
+  .home__wrapper {
+    min-height: calc(100vh - 60px);
+  }
+  .home__subtitle {
+    font-size: 18px;
+    margin: 130px 0 5px;
+  }
+  .home__title {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+  .home__description {
+    font-size: 16px;
+    margin-bottom: 26px;
+  }
+  .advantages .row {
+    margin-left: 0;
+  }
+  .about .row {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .about__img {
+    display: none;
+  }
+  .about__wrapper {
+    padding-left: 25px !important;
+    max-width: 300px;
+  }
+  .gallery {
+    padding-bottom: 10px;
+  }
+  .gallery__wrapper {
+    left: calc((100vw - 1280px) / 2 - 480px);
+  }
+  .gallery__img {
+    height: 200px;
+  }
+  .gallery__button-wrapper {
+    top: -125px;
+    width: 330px;
+  }
+  .safety, .comfort {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .safety__title, .comfort__title {
+    text-align: center;
+  }
+  .safety__img, .comfort__img {
+    position: initial;
+    height: auto;
+    max-height: 200px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .safety__img--back, .comfort__img--back {
+    display: none;
+  }
+  .safety {
+    padding-bottom: 20px;
+  }
+  .comfort {
+    padding-top: 0;
+  }
+  .comfort__button {
+    margin: 0 auto;
+  }
+  .plan__title {
+    margin-bottom: 30px;
+  }
+  .plan__img {
+    width: 100vw;
+    /* position: unset; */
+    margin-left: 0;
+  }
+  .contacts__wrapper {
+    height: auto;
+  }
+  .contacts__title {
+    margin-top: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */

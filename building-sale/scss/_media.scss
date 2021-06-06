@@ -1,6 +1,6 @@
 @media all and (max-width: 1279px) {
   body {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   h3 {
@@ -138,4 +138,123 @@
 }
 
 
-@media all and (max-width: 767px) { }
+@media all and (max-width: 767px) {
+  .header {
+    font-size: 12px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    &__contacts {
+      display: flex;
+      justify-content: space-between;
+    }
+
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .home {
+    &__wrapper {
+      min-height: calc(100vh - 60px);
+    }
+
+    &__subtitle {
+      font-size: 18px;
+      margin: 130px 0 5px;
+    }
+
+    &__title {
+      font-size: 26px;
+      margin-bottom: 15px;
+    }
+
+    &__description {
+      font-size: 16px;
+      margin-bottom: 26px;
+    }
+  }
+
+  .advantages {
+    .row {
+      margin-left: 0;
+    }
+  }
+
+  .about {
+    .row {
+      justify-content: center !important;
+    }
+    &__img {
+      display: none;
+    }
+    &__wrapper {
+      padding-left: 25px !important;
+      max-width: 300px;
+    }
+  }
+
+  .gallery {
+    padding-bottom: 10px;
+    &__wrapper {
+      left: calc((100vw - 1280px) / 2 - 480px);
+    }
+    &__img {
+      height: 200px;
+    }
+    &__button-wrapper {
+      top: -125px;
+      width: 330px;
+    }
+  }
+
+  .safety, .comfort {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    &__title {
+      text-align: center;
+    }
+    &__img {
+      position: initial;
+      height: auto;
+      max-height: 200px;
+      order: 2;
+      &--back {
+        display: none;
+      }
+    }
+  }
+
+  .safety {
+    padding-bottom: 20px;
+  }
+
+  .comfort {
+    padding-top: 0;
+  &__button {
+    margin: 0 auto;
+  }
+  }
+
+  .plan {
+    &__title {
+      margin-bottom: 30px;
+  }
+    &__img {
+      width: 100vw;
+      /* position: unset; */
+      margin-left: 0;
+    }
+  }
+
+  .contacts {
+    &__wrapper {
+      height: auto;
+    }
+    &__title {
+      margin-top: 15px;
+    }
+}
+
+ }
