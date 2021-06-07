@@ -1,5 +1,4 @@
 const zoomIn = document.querySelector(".zoom__in");
-console.log(zoomIn);
 
 zoomIn.addEventListener("click", deleteElement);
 
@@ -8,7 +7,6 @@ document
   .forEach((element) => element.addEventListener("click", zoomElements));
 
 function zoomElements(e) {
-  console.log(window.event, e.srcElement);
   const element = e.srcElement;
   const childrenDiv = document.createElement("div");
   zoomIn.appendChild(childrenDiv);

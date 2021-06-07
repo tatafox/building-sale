@@ -5,7 +5,6 @@ const offset =
   ((document.documentElement.clientWidth - 1900) / 10) * 5 -
   basicOffset -
   galleryItem[0].offsetWidth;
-console.log(galleryItem[0].offsetWidth);
 galleryList.style.left = offset + "px";
 
 function pressRightSlider() {
@@ -30,7 +29,6 @@ function slide(itemName, listName, left, insertName, listWidth) {
     let itemLength = item.length;
     left ? (deleteNumber = itemLength - 1) : (insertNumber = itemLength - 1);
     const insItem = left ? itemLength - 3 : 2;
-    console.log(deleteNumber, insertNumber);
     item[insertNumber].insertAdjacentHTML(insertName, item[insItem].outerHTML);
     item[deleteNumber].remove();
     list.style.left = offset + "px";
