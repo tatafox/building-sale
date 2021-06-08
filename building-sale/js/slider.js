@@ -1,6 +1,6 @@
 const galleryItem = document.querySelectorAll(".gallery__img");
 const galleryList = document.querySelector(".gallery__wrapper");
-const basicOffset = galleryItem[0].offsetWidth > 400 ? 215 : 185;
+const basicOffset = galleryItem[0].offsetWidth > 400 ? 215 : 195;
 const offset =
   ((document.documentElement.clientWidth - 1900) / 10) * 5 -
   basicOffset -
@@ -21,7 +21,7 @@ function slide(itemName, listName, left, insertName, listWidth) {
   list.classList.add("slider-animation");
   const itemWidth = listWidth ? list.clientWidth : item[0].clientWidth;
   const leftOffset = left ? offset + itemWidth : offset - itemWidth;
-  list.style.left = leftOffset + "px";
+  list.style.left = leftOffset - 20 + "px";
   setTimeout(() => {
     list.classList.remove("slider-animation");
     let insertNumber = 0;

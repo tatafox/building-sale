@@ -106,6 +106,30 @@
                 <li class="advantages__item">
                   <div class="advantages__line">
                     <img
+                      src="./img/icons/production.svg"
+                      alt="производство"
+                      class="advantages__icon fade-in"
+                      width="60px"
+                    />
+                  </div>
+                  <p class="advantages__description slide-in--left">место под производство</p>
+                </li>
+                <li class="advantages__item">
+                  <div class="advantages__line">
+                    <img
+                      src="./img/icons/warehouse.svg"
+                      alt="склад"
+                      class="advantages__icon fade-in"
+                      width="60px"
+                    />
+                  </div>
+                  <p class="advantages__description slide-in--left">
+                    теплый и холодные склады
+                  </p>
+                </li>
+                <li class="advantages__item">
+                  <div class="advantages__line">
+                    <img
                       src="./img/icons/office.svg"
                       alt="оффис"
                       class="advantages__icon fade-in"
@@ -126,30 +150,6 @@
                   <p class="advantages__description slide-in--left">
                     место под грузовую технику
                   </p>
-                </li>
-                <li class="advantages__item">
-                  <div class="advantages__line">
-                    <img
-                      src="./img/icons/warehouse.svg"
-                      alt="склад"
-                      class="advantages__icon fade-in"
-                      width="60px"
-                    />
-                  </div>
-                  <p class="advantages__description slide-in--left">
-                    теплый и холодные склады
-                  </p>
-                </li>
-                <li class="advantages__item">
-                  <div class="advantages__line">
-                    <img
-                      src="./img/icons/production.svg"
-                      alt="производство"
-                      class="advantages__icon fade-in"
-                      width="60px"
-                    />
-                  </div>
-                  <p class="advantages__description slide-in--left">место под производство</p>
                 </li>
                 <li class="advantages__item">
                   <div class="advantages__line">
@@ -176,6 +176,17 @@
                 <li class="advantages__item">
                   <div class="advantages__line">
                     <img
+                      src="./img/icons/shower.svg"
+                      alt="душ"
+                      class="advantages__icon fade-in"
+                      width="60px"
+                    />
+                  </div>
+                  <p class="advantages__description slide-in--left">коммуникации</p>
+                </li>
+                <li class="advantages__item">
+                  <div class="advantages__line">
+                    <img
                       src="./img/icons/safety.svg"
                       alt="замок"
                       class="advantages__icon fade-in"
@@ -196,17 +207,6 @@
                   <p class="advantages__description slide-in--left">
                     высоко- скоростной интернет
                   </p>
-                </li>
-                <li class="advantages__item">
-                  <div class="advantages__line">
-                    <img
-                      src="./img/icons/shower.svg"
-                      alt="душ"
-                      class="advantages__icon fade-in"
-                      width="60px"
-                    />
-                  </div>
-                  <p class="advantages__description slide-in--left">коммуникации</p>
                 </li>
               </ul>
             </div>
@@ -263,8 +263,8 @@
       <!-- /about -->
 
       <!-- gallery -->
-      <div class="gallery" id="gallery">
-        <div class="gallery__wrapper d-flex slide-in--left">
+      <div class="gallery slide-in--left" id="gallery">
+        <div class="gallery__wrapper d-flex">
           <img
             src="./img/0001.jpg"
             alt="изображение помещения"
@@ -485,12 +485,14 @@
       <!-- plan -->
       <div class="plan" id="plan">
         <h3 class="plan__title fade-in">План здания</h3>
+        <h4 class="plan__subtitle slide-in--left">1 этаж</h4>
         <img
           src="./img/1 floor.jpg"
           alt="план 1 этажа"
           class="plan__img plan__img--1 zoom slide-in--left"
           width="1200px"
         />
+        <h4 class="plan__subtitle slide-in--right">2 этаж</h4>       
         <img
           src="./img/2 floor.jpg"
           alt="план 2 этажа"
@@ -503,12 +505,7 @@
       <!-- contacts -->
       <div class="contacts" id="contacts">
         <div class="contacts__map">
-          <iframe
-            src="https://yandex.ru/map-widget/v1/?um=constructor%3A5e91050b2b080e801e0ae82fd259a6f31c84ad2730fcb692f5841247725326cf&amp;source=constructor"
-            width="100%"
-            height="550"
-            frameborder="0"
-          ></iframe>
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5e91050b2b080e801e0ae82fd259a6f31c84ad2730fcb692f5841247725326cf&amp;source=constructor" width="100%" height="550" frameborder="0"></iframe>
           <!-- <iframe
             src="https://yandex.ru/map-widget/v1/?um=constructor%3A5e91050b2b080e801e0ae82fd259a6f31c84ad2730fcb692f5841247725326cf&amp;source=constructor"
             width="100%"
@@ -538,7 +535,7 @@
                 </a>
                 <div class="contacts__social-media contacts__item fade-in">
                   <a
-                    href="https://wa.me/79833401010"
+                    href="https://wa.me/79833401010"  target="_blank"
                     class="contacts__icon contacts__link"
                   >
                     <img
@@ -548,7 +545,7 @@
                       width="35px"
                     />
                   </a>
-                  <a href="" class="contacts__icon contacts__link">
+                  <a href="https://www.facebook.com/profile.php?id=100068843724287&sk=about_details"  target="_blank" class="contacts__icon contacts__link">
                     <img
                       src="./img/icons/facebook.svg"
                       alt="facebook icon"
@@ -557,7 +554,8 @@
                     />
                   </a>
                   <a
-                    href="https://telegram.me/Zdanie_Proletarka"
+                    href="https://telegram.me/Zdanie_Proletarka" 
+                    target="_blank"
                     class="contacts__icon contacts__link"
                   >
                     <img
