@@ -20,8 +20,8 @@ function slide(itemName, listName, left, insertName, listWidth) {
   const list = document.querySelector(listName);
   list.classList.add("slider-animation");
   const itemWidth = listWidth ? list.clientWidth : item[0].clientWidth;
-  const leftOffset = left ? offset + itemWidth : offset - itemWidth;
-  list.style.left = leftOffset - 20 + "px";
+  const leftOffset = left ? offset + itemWidth + 20 : offset - itemWidth - 20;
+  list.style.left = leftOffset + "px";
   setTimeout(() => {
     list.classList.remove("slider-animation");
     let insertNumber = 0;
