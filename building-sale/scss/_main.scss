@@ -332,14 +332,19 @@ h3 {
   &__title {
     margin-bottom: 70px;
   }
+
+  &__subtitle {
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
   &__img {
     cursor: zoom-in;
     &--1 {
-      margin-left: -80px;
+     // margin-left: -80px;
       margin-bottom: 30px;
     }
     &--2 {
-      margin-left: 100px;
+     // margin-left: 100px;
       margin-bottom: 150px;
     }
 

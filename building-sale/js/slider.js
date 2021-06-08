@@ -1,11 +1,10 @@
 const galleryItem = document.querySelectorAll(".gallery__img");
 const galleryList = document.querySelector(".gallery__wrapper");
-const basicOffset = galleryItem[0].offsetWidth > 400 ? 215 : 185;
+const basicOffset = galleryItem[0].offsetWidth > 400 ? 215 : 195;
 const offset =
   ((document.documentElement.clientWidth - 1900) / 10) * 5 -
   basicOffset -
   galleryItem[0].offsetWidth;
-console.log(galleryItem[0].offsetWidth);
 galleryList.style.left = offset + "px";
 
 function pressRightSlider() {
@@ -22,7 +21,7 @@ function slide(itemName, listName, left, insertName, listWidth) {
   list.classList.add("slider-animation");
   const itemWidth = listWidth ? list.clientWidth : item[0].clientWidth;
   const leftOffset = left ? offset + itemWidth : offset - itemWidth;
-  list.style.left = leftOffset + "px";
+  list.style.left = leftOffset - 20 + "px";
   setTimeout(() => {
     list.classList.remove("slider-animation");
     let insertNumber = 0;
@@ -30,7 +29,6 @@ function slide(itemName, listName, left, insertName, listWidth) {
     let itemLength = item.length;
     left ? (deleteNumber = itemLength - 1) : (insertNumber = itemLength - 1);
     const insItem = left ? itemLength - 3 : 2;
-    console.log(deleteNumber, insertNumber);
     item[insertNumber].insertAdjacentHTML(insertName, item[insItem].outerHTML);
     item[deleteNumber].remove();
     list.style.left = offset + "px";

@@ -114,7 +114,7 @@
     &__img {
       width: 750px;
       &--2 {
-        margin-left: 50px;
+       // margin-left: 50px;
         margin-bottom: 70px;
       }
     }
@@ -241,10 +241,14 @@
     &__title {
       margin-bottom: 30px;
   }
+  &__subtitle {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
     &__img {
       width: 100vw;
       /* position: unset; */
-      margin-left: 0;
+     // margin-left: 0;
     }
   }
 
