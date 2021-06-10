@@ -144,6 +144,10 @@ body {
   overflow: hidden;
 }
 
+main {
+  overflow: hidden;
+}
+
 h3 {
   font-family: "Play", sans-serif;
   line-height: 1.2;
@@ -325,7 +329,6 @@ h3 {
 /* ---gallery---*/
 .gallery {
   overflow: hidden;
-  padding-bottom: 180px;
 }
 
 .gallery__wrapper {
@@ -358,7 +361,7 @@ h3 {
 /* ---safety---*/
 .safety {
   position: relative;
-  padding-bottom: 300px;
+  padding-bottom: 200px;
 }
 
 .safety__wrapper {
@@ -367,6 +370,7 @@ h3 {
 }
 
 .safety__title {
+  margin-top: 180px;
   margin-bottom: 55px;
 }
 
@@ -376,12 +380,12 @@ h3 {
 
 .safety__img--back {
   right: 0px;
-  top: -120px;
+  top: 30px;
 }
 
 .safety__img--top {
   right: 350px;
-  top: -30px;
+  top: 150px;
 }
 
 /* ---safety---*/
@@ -399,6 +403,7 @@ h3 {
 }
 
 .comfort__title {
+  margin-top: 100px;
   margin-bottom: 55px;
 }
 
@@ -413,12 +418,12 @@ h3 {
 .comfort__img--back {
   z-index: -1;
   left: 0px;
-  top: 95px;
+  top: 195px;
 }
 
 .comfort__img--top {
   left: 400px;
-  top: -5px;
+  top: 95px;
 }
 
 /* ---comfort---*/
