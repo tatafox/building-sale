@@ -225,6 +225,7 @@ h3 {
 
 .home__wrapper {
   background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.15);
   min-height: calc(100vh - 122px);
 }
 
@@ -236,6 +237,7 @@ h3 {
   color: #000;
   text-transform: uppercase;
   margin-bottom: 30px;
+  color: white;
 }
 
 .home__subtitle {
@@ -256,6 +258,7 @@ h3 {
 .home__description {
   font-size: 30px;
   margin-bottom: 35px;
+  color: white;
 }
 
 .home__button {
