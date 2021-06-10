@@ -162,6 +162,7 @@ h3 {
   line-height: 1.667;
   color: #000;
   font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .menu {
@@ -181,6 +182,7 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 100;
 }
 
 /* ---/header---*/
@@ -211,9 +213,10 @@ h3 {
 
 /* ---button---*/
 /* ---home---*/
-.home {
-  background-image: url(../img/background.jpg);
-  background-size: cover;
+.home__video {
+  position: absolute;
+  top: 0;
+  z-index: -1;
 }
 
 .home__wrapper {
@@ -260,6 +263,7 @@ h3 {
 .advantages {
   padding-bottom: 185px;
   padding-top: 100px;
+  background-color: white;
 }
 
 .advantages__item {
@@ -533,6 +537,12 @@ h3 {
     height: 50px;
     font-size: 14px;
   }
+  .home__wrapper {
+    min-height: auto;
+  }
+  .home__video {
+    top: auto;
+  }
   .home__title {
     font-size: 32px;
   }
@@ -646,9 +656,6 @@ h3 {
   .menu {
     display: none;
   }
-  .home__wrapper {
-    min-height: calc(100vh - 60px);
-  }
   .home__subtitle {
     font-size: 18px;
     margin: 130px 0 5px;
@@ -738,6 +745,31 @@ h3 {
   }
   .contacts__title {
     margin-top: 15px;
+  }
+}
+
+@media all and (max-width: 599px) {
+  .home {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .home__subtitle {
+    margin-top: 30px;
+  }
+  .home .container {
+    background-image: url(../img/background.jpg);
+  }
+  .home__video {
+    margin-top: 30px;
+    position: inherit;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
 }
 /*# sourceMappingURL=style.css.map */
