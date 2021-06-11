@@ -503,6 +503,7 @@ h3 {
 /* ---contacts---*/
 .contacts {
   position: relative;
+  min-height: 550px;
 }
 
 .contacts__map {
