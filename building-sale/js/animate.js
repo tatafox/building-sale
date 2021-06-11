@@ -45,3 +45,7 @@ function pressMenu(e) {
 document
   .querySelectorAll(".menu__link")
   .forEach((element) => element.addEventListener("click", pressMenu));
+
+document
+  .querySelectorAll(".button")
+  .forEach((element) => element.addEventListener("click", pressMenu));
