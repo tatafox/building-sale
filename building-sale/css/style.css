@@ -229,6 +229,10 @@ h3 {
   min-height: calc((100vw * 1080) / 1920 - 122px);
 }
 
+.home__content {
+  height: 100%;
+}
+
 .home__title {
   font-family: "Play", sans-serif;
   line-height: 1.2;
@@ -252,7 +256,9 @@ h3 {
   padding: 10px 0;
   -webkit-transform: rotate(6deg);
           transform: rotate(6deg);
-  margin: 170px 0 5px;
+  margin: 0 0 5px;
+  -ms-flex-preferred-size: auto !important;
+      flex-basis: auto !important;
 }
 
 .home__description {
@@ -262,7 +268,7 @@ h3 {
 }
 
 .home__button {
-  margin-bottom: 70px;
+  margin-bottom: 20px;
 }
 
 /* ---home---*/
