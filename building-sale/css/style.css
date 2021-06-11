@@ -224,9 +224,8 @@ h3 {
 }
 
 .home__wrapper {
-  background-color: rgba(255, 255, 255, 0.3);
   background-color: rgba(0, 0, 0, 0.15);
-  min-height: calc(100vh - 122px);
+  min-height: calc((100vw * 1080) / 1920 - 122px);
 }
 
 .home__title {
