@@ -226,7 +226,7 @@ h3 {
 
 .home__wrapper {
   background-color: rgba(0, 0, 0, 0.15);
-  min-height: calc((100vw * 1080) / 1920 - 122px);
+  min-height: calc((100vw * 1080) / 1920 - 135px);
 }
 
 .home__content {
@@ -275,7 +275,7 @@ h3 {
 /* ---advantages---*/
 .advantages {
   padding-bottom: 120px;
-  padding-top: 100px;
+  padding-top: 130px;
   background-color: white;
 }
 
@@ -300,7 +300,7 @@ h3 {
 /* ---advantages---*/
 /* ---about---*/
 .about {
-  padding-top: 65px;
+  padding-top: 95px;
   padding-bottom: 90px;
 }
 
@@ -445,7 +445,7 @@ h3 {
 }
 
 .feedback__wrapper {
-  margin: 80px 0;
+  margin: 100px 0;
 }
 
 .feedback__input {
