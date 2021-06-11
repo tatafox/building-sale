@@ -21,3 +21,7 @@ let skroll = new Skroll()
     duration: 750,
   })
   .init();
+
+window.onresize = function (event) {
+  document.location.reload(true);
+};
