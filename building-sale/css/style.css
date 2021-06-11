@@ -274,7 +274,7 @@ h3 {
 /* ---home---*/
 /* ---advantages---*/
 .advantages {
-  padding-bottom: 185px;
+  padding-bottom: 120px;
   padding-top: 100px;
   background-color: white;
 }
@@ -300,7 +300,8 @@ h3 {
 /* ---advantages---*/
 /* ---about---*/
 .about {
-  padding-bottom: 190px;
+  padding-top: 65px;
+  padding-bottom: 90px;
 }
 
 .about__img {
@@ -338,6 +339,7 @@ h3 {
 /* ---gallery---*/
 .gallery {
   overflow: hidden;
+  padding-top: 100px;
 }
 
 .gallery__wrapper {
