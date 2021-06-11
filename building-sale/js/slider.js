@@ -15,24 +15,35 @@ function pressLeftSlider() {
   slide(".gallery__img", ".gallery__wrapper", true, "beforebegin");
 }
 
-function slide(itemName, listName, left, insertName, listWidth) {
+async function slide(itemName, listName, left, insertName, listWidth) {
   const item = document.querySelectorAll(itemName);
+  // const newItem = item;
   const list = document.querySelector(listName);
+  const newList = list;
   list.classList.add("slider-animation");
+  //setTimeout(() => {
   const itemWidth = listWidth ? list.clientWidth : item[0].clientWidth;
-  const leftOffset = left ? offset + itemWidth + 20 : offset - itemWidth - 20;
-  list.style.left = leftOffset + "px";
-  setTimeout(() => {
-    list.classList.remove("slider-animation");
-    let insertNumber = 0;
-    let deleteNumber = 0;
-    let itemLength = item.length;
-    left ? (deleteNumber = itemLength - 1) : (insertNumber = itemLength - 1);
-    const insItem = left ? itemLength - 3 : 2;
-    item[insertNumber].insertAdjacentHTML(insertName, item[insItem].outerHTML);
-    item[deleteNumber].remove();
-    list.style.left = offset + "px";
-  }, 300);
+  const leftOffset = left ? itemWidth + 20 : 0 - itemWidth - 20;
+  //transform: translateX(...)
+  list.style.transform = "translateX(" + leftOffset + "px)";
+  //setTimeout(() => {
+  let insertNumber = 0;
+  let deleteNumber = 0;
+  let itemLength = item.length;
+  left ? (deleteNumber = itemLength - 1) : (insertNumber = itemLength - 1);
+  const insItem = left ? itemLength - 3 : 2;
+  await sleep(300);
+  item[insertNumber].insertAdjacentHTML(insertName, item[insItem].outerHTML);
+  list.classList.remove("slider-animation");
+  item[deleteNumber].remove();
+  list.style.transform = "translateX(0px)";
+  //list.style.left = offset + "px";
+  // }, 500);
+  //}, 100);
+}
+
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 document
