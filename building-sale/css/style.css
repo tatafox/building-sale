@@ -104,6 +104,11 @@
   background-color: rgba(0, 0, 0, 0.6);
 }
 
+.zoom--active img {
+  cursor: -webkit-zoom-out;
+  cursor: zoom-out;
+}
+
 .zoom--height {
   height: 90vh;
 }
@@ -755,7 +760,6 @@ h3 {
   }
   .plan__img {
     width: 100vw;
-    /* position: unset; */
   }
   .contacts__wrapper {
     height: auto;

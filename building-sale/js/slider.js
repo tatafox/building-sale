@@ -37,9 +37,6 @@ async function slide(itemName, listName, left, insertName, listWidth) {
   list.classList.remove("slider-animation");
   item[deleteNumber].remove();
   list.style.transform = "translateX(0px)";
-  //list.style.left = offset + "px";
-  // }, 500);
-  //}, 100);
 }
 
 function sleep(ms) {
